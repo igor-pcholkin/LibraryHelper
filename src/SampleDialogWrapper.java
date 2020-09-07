@@ -7,6 +7,7 @@ import util.FetchArtifacts;
 import javax.annotation.Nullable;
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
@@ -64,22 +65,27 @@ public class SampleDialogWrapper extends DialogWrapper {
   }
 
   private void updateArtifactListForCategoryComboBox() {
-    while (artifactLoadingsInProgress.get() > 0) {
-      try {
-        Thread.sleep(200);
-      } catch (InterruptedException e) {
-        //
+    artifactLoadingsInProgress.incrementAndGet();
+    new Thread(() -> {
+      while (artifactLoadingsInProgress.get() > 1) {
+        try {
+          Thread.sleep(200);
+        } catch (InterruptedException e) {
+          //
+        }
       }
-    }
-    String selectedCategory = categoriesComboBox.getSelectedItem().toString();
-    if (!selectedCategory.equals(lastUpdatedCategory)) {
-      lastUpdatedCategory = selectedCategory;
-      artifactLoadingsInProgress.incrementAndGet();
-      new Thread(new ArtefactLoader(categories, selectedCategory, artefacts -> {
-        artefactsUIList.setListData(artefacts.stream().map(Artefact::getName).collect(Collectors.toList()).toArray());
-        artifactLoadingsInProgress.decrementAndGet();
-      })).start();
-    }
+      String selectedCategory = categoriesComboBox.getSelectedItem().toString();
+      if (!selectedCategory.equals(lastUpdatedCategory)) {
+        lastUpdatedCategory = selectedCategory;
+        try {
+          java.util.List<Artefact> artefacts = new ArtefactLoader(categories).fetchArtifacts(selectedCategory);
+          artefactsUIList.setListData(artefacts.stream().map(Artefact::getName).collect(Collectors.toList()).toArray());
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
+      }
+      artifactLoadingsInProgress.decrementAndGet();
+    }).start();
   }
 
   private static Map<String, String> readTopCategoriesFromFile() {

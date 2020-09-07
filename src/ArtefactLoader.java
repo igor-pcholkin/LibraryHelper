@@ -11,23 +11,18 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Consumer;
 
-public class ArtefactLoader implements Runnable {
+public class ArtefactLoader {
 
   private Map<String, String> categories;
-  private String category;
-  private Consumer<List<Artefact>> callback;
 
-  public ArtefactLoader(Map<String, String> categories, String category, Consumer<List<Artefact>> callback) {
+  public ArtefactLoader(Map<String, String> categories) {
     super();
 
     this.categories = categories;
-    this.category = category;
-    this.callback = callback;
   }
 
-  private List<Artefact> fetchArtifacts(String category) throws IOException {
+  public List<Artefact> fetchArtifacts(String category) throws IOException {
     String categoryUrl = categories.get(category);
     List<Artefact> artifacts = new LinkedList<>();
     if (categoryUrl != null) {
@@ -60,12 +55,4 @@ public class ArtefactLoader implements Runnable {
     return xPathEvaluator.evaluate(document).list();
   }
 
-  @Override
-  public void run() {
-    try {
-      List<Artefact> artefacts = fetchArtifacts(category);
-      callback.accept(artefacts);
-    } catch (IOException e) {
-    }
-  }
 }
