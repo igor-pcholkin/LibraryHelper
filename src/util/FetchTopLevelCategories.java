@@ -14,26 +14,31 @@ import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
 
-public class MvnGet {
+public class FetchTopLevelCategories {
   public static void main(String args[]) throws IOException, XPathExpressionException {
     HttpClient httpClient = HttpClientBuilder.create().build();
     List<String> categories = new LinkedList<>();
-    XPathEvaluator xPathEvaluator = Xsoup.compile("div/h4/a/text()");
+    XPathEvaluator xPathEvaluator = Xsoup.compile("div/h4/a/text()|div/h4/a/@href");
     for (int i = 1; i <= 10; i++) {
-      categories.addAll(fetchPage(i, httpClient, xPathEvaluator));
+      List<String> categoriesInPage = fetchPage(i, httpClient, xPathEvaluator);
+      int nCategories = categoriesInPage.size() / 2;
+      for (int j = 0; j < nCategories; j++) {
+        categories.add(categoriesInPage.get(j) + ":" + categoriesInPage.get(j + nCategories));
+      }
     }
-    FileWriter fileWriter = new FileWriter("top_level_categories.txt");
+    FileWriter fileWriter = new FileWriter("resources/top_level_categories.txt");
     for (String category: categories) {
-      fileWriter.write(category);
+      fileWriter.write(category + "\n");
     }
     fileWriter.close();
   }
 
   private static List<String> fetchPage(int n, HttpClient httpClient, XPathEvaluator xPathEvaluator)
-          throws IOException, XPathExpressionException {
-    HttpGet request = new HttpGet("https://mvnrepository.com/open-source?p=" + n);
+          throws IOException {
+    String baseUrl = "https://mvnrepository.com";
+    HttpGet request = new HttpGet(baseUrl + "/open-source?p=" + n);
     HttpResponse response = httpClient.execute(request);
-    Document document = Jsoup.parse(response.getEntity().getContent(), null, "https://mvnrepository.com");
+    Document document = Jsoup.parse(response.getEntity().getContent(), null, baseUrl);
     response.getEntity().getContent().close();
     return xPathEvaluator.evaluate(document).list();
   }
