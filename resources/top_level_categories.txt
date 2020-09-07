@@ -1,0 +1,100 @@
+Testing Frameworks
+Logging Frameworks
+Android Packages
+Java Specifications
+JSON Libraries
+Core Utilities
+JVM Languages
+Mocking
+Web Assets
+Logging Bridges
+HTTP Clients
+Dependency Injection
+I/O Utilities
+XML Processing
+OSGI Utilities
+Web Frameworks
+Reflection Libraries
+Build Models
+Bytecode Libraries
+Assertion Libraries
+Embedded SQL Databases
+Collections
+Aspect Oriented
+Base64 Libraries
+Code Analyzers
+Date and Time Utilities
+Validation Frameworks
+Language Runtime
+Object/Relational Mapping
+Command Line Parsers
+Expression Languages
+Object Serialization
+Configuration Libraries
+Transaction APIs/Managers
+Build Tools
+Code Coverage Tools
+Template Engines
+Web Servers
+MySQL Drivers
+JDBC Pools
+Web Applications
+Scala Compilers
+YAML Parsers
+Cache Implementations
+Compression Libraries
+Message Queue Clients
+JPA Implementations
+Mail Clients
+Defect Detection Metadata
+Encryption Libraries
+Eclipse Runtime
+Concurrency Libraries
+PostgreSQL Drivers
+HTML Parsers
+JDBC Extensions
+Math Libraries
+Network App Frameworks
+Maven Plugins
+Application Metrics
+NetBeans Modules
+REST Framework
+Distributed Coordination
+CSV Libraries
+Security Frameworks
+Redis Clients
+Object Pools
+Cloud Computing
+String Utilities
+Eclipse Plugins
+Distributed Computing
+Web Testing
+MongoDB Clients
+Message Brokers
+Actor Frameworks
+MIME Types Libraries
+Enterprise Integration
+Web Upload Managers
+Distributed Communication
+Stream Processing
+Parser Generators
+JSP Tag Libraries
+Functional Programming
+Excel Libraries
+Markdown Processors
+Hadoop Query Engines
+Android Platform
+Job Scheduling
+SSH Libraries
+Console Utilities
+Native Access Tools
+FTP Clients and Servers
+Annotation Processing Tools
+Git Tools
+OAuth Libraries
+JWT Libraries
+Microbenchmarks
+Full-Text Indexing Libraries
+XPath Libraries
+S3 Clients
+ElasticSearch Clients
