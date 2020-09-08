@@ -1,0 +1,1 @@
+jSoup|jsoup is a Java library for working with real-world HTML|org.jsoup:jsoup

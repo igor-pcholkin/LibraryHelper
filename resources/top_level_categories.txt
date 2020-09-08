@@ -1,100 +1,102 @@
-Testing Frameworks:/open-source/testing-frameworks
-Logging Frameworks:/open-source/logging-frameworks
-Android Packages:/open-source/android
-Java Specifications:/open-source/java-specs
-JSON Libraries:/open-source/json-libraries
-Core Utilities:/open-source/core-utilities
-JVM Languages:/open-source/jvm-languages
-Mocking:/open-source/mocking
-Web Assets:/open-source/web-assets
-Logging Bridges:/open-source/logging-bridges
-HTTP Clients:/open-source/http-clients
-Dependency Injection:/open-source/dependency-injection
-I/O Utilities:/open-source/io-utilities
-XML Processing:/open-source/xml-processing
-OSGI Utilities:/open-source/osgi-utilities
-Web Frameworks:/open-source/web-frameworks
-Reflection Libraries:/open-source/reflection-libraries
-Bytecode Libraries:/open-source/bytecode-libraries
-Build Models:/open-source/build-models
-Assertion Libraries:/open-source/assertion-libraries
-Embedded SQL Databases:/open-source/embedded-sql-databases
-Collections:/open-source/collections
-Aspect Oriented:/open-source/aop-programming
-Base64 Libraries:/open-source/base64-libraries
-Code Analyzers:/open-source/code-analyzers
-Date and Time Utilities:/open-source/date-time-utilities
-Validation Frameworks:/open-source/validation
-Language Runtime:/open-source/language-runtime
-Object/Relational Mapping:/open-source/orm
-Command Line Parsers:/open-source/command-line-parsers
-Expression Languages:/open-source/expression-languages
-Object Serialization:/open-source/object-serialization
-Configuration Libraries:/open-source/config-libraries
-Transaction APIs/Managers:/open-source/transactions
-Build Tools:/open-source/build-tools
-Template Engines:/open-source/template-engines
-Code Coverage Tools:/open-source/code-coverage
-Web Servers:/open-source/web-servers
-MySQL Drivers:/open-source/mysql-drivers
-JDBC Pools:/open-source/jdbc-pools
-Web Applications:/open-source/web-apps
-Scala Compilers:/open-source/scala-compilers
-YAML Parsers:/open-source/yaml-parsers
-Cache Implementations:/open-source/cache-implementations
-Compression Libraries:/open-source/compression-libraries
-Message Queue Clients:/open-source/message-queue-clients
-JPA Implementations:/open-source/jpa-implementations
-Mail Clients:/open-source/mail-clients
-Defect Detection Metadata:/open-source/defect-detection-metadata
-Encryption Libraries:/open-source/encryption-libraries
-Eclipse Runtime:/open-source/eclipse-runtime
-Concurrency Libraries:/open-source/concurrency-libraries
-PostgreSQL Drivers:/open-source/postgresql-drivers
-HTML Parsers:/open-source/html-parsers
-JDBC Extensions:/open-source/jdbc-extensions
-Math Libraries:/open-source/math-libraries
-Network App Frameworks:/open-source/network-application-frameworks
-Maven Plugins:/open-source/maven-plugins
-Application Metrics:/open-source/application-metrics
-NetBeans Modules:/open-source/netbeans-modules
-REST Framework:/open-source/rest-frameworks
-Distributed Coordination:/open-source/distributed-coordination
-CSV Libraries:/open-source/csv-libraries
-Security Frameworks:/open-source/security-frameworks
-Redis Clients:/open-source/redis-clients
-Object Pools:/open-source/object-pools
-Cloud Computing:/open-source/cloud-computing-integration
-String Utilities:/open-source/string-utilities
-Eclipse Plugins:/open-source/eclipse-plugins
-Distributed Computing:/open-source/distributed-computing
-Web Testing:/open-source/web-testing
-MongoDB Clients:/open-source/mongodb-clients
-Message Brokers:/open-source/message-brokers
-Actor Frameworks:/open-source/actor-frameworks
-MIME Types Libraries:/open-source/mime-types-libraries
-Enterprise Integration:/open-source/enterprise-integration
-Web Upload Managers:/open-source/upload-manager
-Distributed Communication:/open-source/distributed-communication
-Stream Processing:/open-source/distributed-stream-processing
-Parser Generators:/open-source/parser-generators
-JSP Tag Libraries:/open-source/jsp-taglibs
-Functional Programming:/open-source/functional
-Excel Libraries:/open-source/excel-libraries
-Markdown Processors:/open-source/markdown-processors
-Hadoop Query Engines:/open-source/hadoop-query-engines
-Android Platform:/open-source/android-platform
-Job Scheduling:/open-source/job-scheduling
-SSH Libraries:/open-source/ssh-libraries
-Console Utilities:/open-source/console-utilities
-Native Access Tools:/open-source/native-access
-FTP Clients and Servers:/open-source/ftp
-Annotation Processing Tools:/open-source/annotation-tools
-Git Tools:/open-source/git-tools
-OAuth Libraries:/open-source/oauth-libraries
-JWT Libraries:/open-source/json-web-tokens-libraries
-Microbenchmarks:/open-source/microbenchmarks
-Full-Text Indexing Libraries:/open-source/text-indexing
-XPath Libraries:/open-source/xpath
-S3 Clients:/open-source/s3-clients
-ElasticSearch Clients:/open-source/elasticsearch-clients
+Testing Frameworks
+Logging Frameworks
+Android Packages
+Java Specifications
+JSON Libraries
+Core Utilities
+JVM Languages
+Web Assets
+Logging Bridges
+HTTP Clients
+Dependency Injection
+IO Utilities
+XML Processing
+OSGI Utilities
+Web Frameworks
+Reflection Libraries
+Build Models
+Bytecode Libraries
+Assertion Libraries
+Embedded SQL Databases
+Collections
+Aspect Oriented
+Base64 Libraries
+Code Analyzers
+Date and Time Utilities
+Validation Frameworks
+Language Runtime
+Object/Relational Mapping
+Command Line Parsers
+Expression Languages
+Object Serialization
+Configuration Libraries
+Transaction APIs/Managers
+Build Tools
+Code Coverage Tools
+Template Engines
+Web Servers
+MySQL Drivers
+JDBC Pools
+Web Applications
+Scala Compilers
+YAML Parsers
+Cache Implementations
+Compression Libraries
+Message Queue Clients
+JPA Implementations
+Mail Clients
+Defect Detection Metadata
+Encryption Libraries
+Eclipse Runtime
+Concurrency Libraries
+PostgreSQL Drivers
+HTML Parsers
+JDBC Extensions
+Math Libraries
+Network App Frameworks
+Maven Plugins
+Application Metrics
+NetBeans Modules
+REST Framework
+Distributed Coordination
+CSV Libraries
+Security Frameworks
+Redis Clients
+Object Pools
+Cloud Computing
+String Utilities
+Eclipse Plugins
+Distributed Computing
+Web Testing
+MongoDB Clients
+Message Brokers
+Actor Frameworks
+MIME Types Libraries
+Enterprise Integration
+Web Upload Managers
+Distributed Communication
+Stream Processing
+Parser Generators
+JSP Tag Libraries
+Functional Programming
+Excel Libraries
+Markdown Processors
+Hadoop Query Engines
+Android Platform
+Job Scheduling
+SSH Libraries
+Console Utilities
+Native Access Tools
+FTP Clients and Servers
+Annotation Processing Tools
+Git Tools
+OAuth Libraries
+JWT Libraries
+Microbenchmarks
+Full-Text Indexing Libraries
+XPath Libraries
+S3 Clients
+ElasticSearch Clients
+Spring framework
+Apache Commons
+Scripting languages

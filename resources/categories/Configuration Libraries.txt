@@ -1,0 +1,1 @@
+Apache Commons Configuration|Reading of configuration/preferences files in various formats|org.apache.commons:commons-configuration2

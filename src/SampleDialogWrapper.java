@@ -1,41 +1,42 @@
 import com.intellij.openapi.ui.ComboBox;
 import com.intellij.openapi.ui.DialogWrapper;
+import com.intellij.ui.Gray;
 import com.intellij.ui.components.JBList;
+import com.intellij.ui.components.JBScrollPane;
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 import org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;
-import util.FetchArtifacts;
+import org.random.libraryhelper.Dependency;
+import org.random.libraryhelper.DependencyLoader;
 
 import javax.annotation.Nullable;
 import javax.swing.*;
+import javax.swing.event.ListDataListener;
 import java.awt.*;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 import static javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER;
 import static javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED;
+import static javax.swing.SwingConstants.LEFT;
 
 public class SampleDialogWrapper extends DialogWrapper {
 
   ComboBox categoriesComboBox;
   JList artefactsUIList;
+  JTextField artefactInfo;
+  JTextArea artefactDescription;
 
-  Map<String, String> categories;
-  AtomicInteger artifactLoadingsInProgress ;
+  java.util.List<String> categories;
+
   volatile String lastUpdatedCategory;
 
   public SampleDialogWrapper() {
     super(true); // use current window as parent
 
-    categories = readTopCategoriesFromFile();
+    categories = DependencyLoader.readCategories();
 
     init();
     setTitle("Choose dependency");
 
-    artifactLoadingsInProgress = new AtomicInteger(0);
     updateArtifactListForCategoryComboBox();
   }
 
@@ -44,61 +45,77 @@ public class SampleDialogWrapper extends DialogWrapper {
   protected JComponent createCenterPanel() {
 
     JPanel dialogPanel = new JPanel(new BorderLayout());
-    dialogPanel.setPreferredSize(new Dimension(300, 500));
+    dialogPanel.setPreferredSize(new Dimension(600, 300));
 
     categoriesComboBox = new ComboBox();
-    artefactsUIList = new JBList();
-
-    for (String category: categories.keySet()) {
+    for (String category: categories) {
       categoriesComboBox.addItem(category);
     }
-
     AutoCompleteDecorator.decorate(categoriesComboBox);
-
     categoriesComboBox.addActionListener(e -> updateArtifactListForCategoryComboBox());
 
-    dialogPanel.add(categoriesComboBox, BorderLayout.NORTH);
-    dialogPanel.add(new JScrollPane(artefactsUIList, VERTICAL_SCROLLBAR_AS_NEEDED, HORIZONTAL_SCROLLBAR_NEVER),
-            BorderLayout.CENTER);
+    artefactsUIList = new JBList();
+    artefactsUIList.addListSelectionListener(e -> updateArtefactInfo());
+
+    artefactInfo = new JTextField();
+    artefactInfo.setEditable(false);
+    artefactInfo.setBackground(Gray._220);
+    artefactDescription = new JTextArea();
+    artefactDescription.setEditable(false);
+    artefactDescription.setLineWrap(true);
+    artefactDescription.setFont(artefactInfo.getFont());
+    artefactDescription.setBackground(Gray._220);
+
+    JPanel leftPanel = new JPanel(new BorderLayout());
+    leftPanel.add(categoriesComboBox, BorderLayout.NORTH);
+    JScrollPane scrollPane = new JBScrollPane(artefactsUIList, VERTICAL_SCROLLBAR_AS_NEEDED, HORIZONTAL_SCROLLBAR_NEVER);
+    leftPanel.add(scrollPane, BorderLayout.CENTER);
+    leftPanel.setMinimumSize(new Dimension(100, 300));
+    leftPanel.setBorder(BorderFactory.createEmptyBorder());
+
+    JPanel rightPanel = new JPanel(new BorderLayout());
+    rightPanel.add(artefactInfo, BorderLayout.NORTH);
+    rightPanel.add(artefactDescription, BorderLayout.CENTER);
+    rightPanel.setMinimumSize(new Dimension(100, 300));
+
+    JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, leftPanel, rightPanel);
+    splitPane.setOneTouchExpandable(true);
+    splitPane.setContinuousLayout(true);
+    splitPane.setDividerLocation(200);
+    splitPane.setBorder(BorderFactory.createEmptyBorder());
+
+    dialogPanel.add(splitPane);
 
     return dialogPanel;
   }
 
-  private void updateArtifactListForCategoryComboBox() {
-    artifactLoadingsInProgress.incrementAndGet();
-    new Thread(() -> {
-      while (artifactLoadingsInProgress.get() > 1) {
-        try {
-          Thread.sleep(200);
-        } catch (InterruptedException e) {
-          //
-        }
-      }
-      String selectedCategory = categoriesComboBox.getSelectedItem().toString();
-      if (!selectedCategory.equals(lastUpdatedCategory)) {
-        lastUpdatedCategory = selectedCategory;
-        try {
-          java.util.List<Artefact> artefacts = new ArtefactLoader(categories).fetchArtifacts(selectedCategory);
-          artefactsUIList.setListData(artefacts.stream().map(Artefact::getName).collect(Collectors.toList()).toArray());
-        } catch (IOException e) {
-          e.printStackTrace();
-        }
-      }
-      artifactLoadingsInProgress.decrementAndGet();
-    }).start();
+  private void updateArtefactInfo() {
+    if (artefactsUIList.getSelectedIndex() >= 0) {
+      Dependency dependency = (Dependency) artefactsUIList.getModel().getElementAt(artefactsUIList.getSelectedIndex());
+      artefactInfo.setText(dependency.getGroup() + ":" + dependency.getArtfefact());
+      artefactDescription.setText(dependency.getDescription());
+    } else {
+      artefactInfo.setText("");
+      artefactDescription.setText("");
+    }
   }
 
-  private static Map<String, String> readTopCategoriesFromFile() {
-    Map<String, String> categories = new HashMap<>();
-    InputStream in = FetchArtifacts.class.getClassLoader()
-            .getResourceAsStream("top_level_categories.txt");
-    Scanner scanner = new Scanner(in);
-    while (scanner.hasNextLine()) {
-      String lineParts[] = scanner.nextLine().split(":");
-      categories.put(lineParts[0], lineParts[1]);
+  private void updateArtifactListForCategoryComboBox() {
+    String selectedCategory = categoriesComboBox.getSelectedItem().toString();
+    if (!selectedCategory.equals(lastUpdatedCategory)) {
+      lastUpdatedCategory = selectedCategory;
+      java.util.List<Dependency> dependencies = DependencyLoader.load(selectedCategory);
+      artefactsUIList.setListData(dependencies.toArray());
+      artefactsUIList.setCellRenderer(new DefaultListCellRenderer() {
+        @Override
+        public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+          Component defaultComponent = super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+          Dependency dependency = (Dependency) list.getModel().getElementAt(index);
+          setText(dependency.getName());
+          return defaultComponent;
+        }
+      });
     }
-    scanner.close();
-    return categories;
   }
 
 }

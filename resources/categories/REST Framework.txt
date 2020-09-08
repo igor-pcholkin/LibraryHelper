@@ -1,0 +1,1 @@
+REST Assured|Java DSL for simplifying testing of REST based services built on top of HTTP Builder|io.rest-assured:rest-assured

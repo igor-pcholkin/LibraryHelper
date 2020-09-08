@@ -1,0 +1,16 @@
+JUnit|A unit testing framework|junit:junit
+REST Assured|Java DSL for simplifying testing of REST based services built on top of HTTP Builder|io.rest-assured:rest-assured
+Selenium|Allows you to test your JSP pages without launching them in a browser|org.seleniumhq.selenium:selenium-java
+TestNG|testing framework inspired by JUnit and NUnit but introducing many new functionalities|org.testng:testng
+Spock Framework|Another testing and specification framework for Java and Groovy applications|org.spockframework:spock-core
+Cucumber|Tool for automated integration tests merges specification and test documentation into one cohesive whole living documentation|io.cucumber:cucumber-java
+Spring Test|Allows doing in-depth testing without even involving a web container|org.springframework:spring-test
+DBUnit|JUnit extension that can be used to initialize the database into a known state|org.dbunit:dbunit
+Robot Framework|Python-based generic test automation framework for acceptance testing and acceptance test-driven development|org.robotframework:robotframework
+Mockito|Mocking framework for unit tests in Java|org.mockito:mockito-all
+EasyMock|The framework allows the creation of test double objects for the purpose of Test-driven Development (TDD) or Behavior Driven Development (BDD)|org.easymock:easymock
+PowerMock|Allows you to unit test code normally regarded as untestable|org.powermock:powermock-api-mockito
+AssertJ|provides a rich set of assertions, truly helpful error messages, improves test code readability|org.assertj:assertj-core
+Hamcrest|It supports creating customized assertion matchers ('Hamcrest' is an anagram of 'matchers'), allowing match rules to be defined declaratively|org.hamcrest:hamcrest-all
+JSONAssert|Converts your string into a JSON object and compares the logical structure and data with the actual JSON|org.skyscreamer:jsonassert
+JSONPath|Allows to check for specific aspects of the response|com.jayway.jsonpath:json-path

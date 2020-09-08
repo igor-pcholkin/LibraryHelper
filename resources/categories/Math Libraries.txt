@@ -1,0 +1,2 @@
+Apache Commons Geometry|Space and coordinates|org.apache.commons:commons-geometry-parent
+Apache Commons Math|Lightweight, self-contained mathematics and statistics components|org.apache.commons:commons-math3

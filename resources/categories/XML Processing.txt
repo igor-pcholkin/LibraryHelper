@@ -1,0 +1,4 @@
+Apache Commons Digester|XML-to-Java-object mapping utility|org.apache.commons:commons-digester3
+Apache Commons Jelly|XML based scripting and processing engine|commons-jelly:commons-jelly
+Apache Commons SCXML|An implementation of the State Chart XML specification aimed at creating and maintaining a Java SCXML engine|commons-scxml:commons-scxml
+Apache Commons Validator|Framework to define validators and validation rules in an xml file|commons-validator:commons-validator

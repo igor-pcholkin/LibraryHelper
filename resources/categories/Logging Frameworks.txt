@@ -1,0 +1,5 @@
+Log4j|Apache Log4j is a Java-based logging utility|log4j:log4j
+Slf4J|The Simple Logging Facade for Java|org.slf4j:slf4j-api
+Logback|is intended as a successor to the popular log4j project|ch.qos.logback:logback-classic
+Log4j2|Apache Log4j 2 is an upgrade to Log4j that provides significant improvements over its predecessor, Log4j 1.x|org.apache.logging.log4j:log4j
+Apache Commons Logging|Wrapper around a variety of logging API implementations|commons-logging:commons-logging

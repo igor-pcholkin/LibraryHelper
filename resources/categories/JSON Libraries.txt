@@ -1,0 +1,7 @@
+JSON.simple|JSON.simple is a simple Java toolkit for JSON|com.googlecode.json-simple:json-simple
+GSON|Gson is a Java library that can be used to convert Java Objects into their JSON representation|com.google.code.gson:gson
+Jackson|Jackson is a suite of data-processing tools for Java including the flagship streaming JSON parser / generator library, matching data-binding library (POJOs to and from JSON) and additional data format modules to process data encoded in Avro, BSON, CBOR, CSV, Smile, (Java) Properties, Protobuf, XML or YAML|com.fasterxml.jackson.core:jackson-core
+JSON-P|JSON Processing (JSON-P) is a Java API to process (for e.g. parse, generate, transform and query) JSON messages|javax.json:javax.json-api,org.glassfish:javax.json
+JSON in Java (org.json)|The org.json library is easy to use|org.json:json
+JSONAssert|Converts your string into a JSON object and compares the logical structure and data with the actual JSON|org.skyscreamer:jsonassert
+JSONPath|Allows to check for specific aspects of the response|com.jayway.jsonpath:json-path

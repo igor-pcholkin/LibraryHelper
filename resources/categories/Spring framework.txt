@@ -1,0 +1,36 @@
+Spring Core|provides a comprehensive programming and configuration model for modern Java-based enterprise applications|org.springframework:spring-core
+Spring Boot|"makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run""|org.springframework.boot:spring-boot-starter-web
+Spring expression|Spring Expression Language|org.springframework:spring-expression
+Spring Beans|Bean Factory and JavaBeans utilities|org.springframework:spring-beans
+Spring AOP|Aspect Oriented Programming (AOP) Framework|org.springframework:spring-aop
+Spring Application Context|This is the central artifact for Spring's Dependency Injection Container|org.springframework:spring-context
+Spring Context support|Various Application Context utilities, including EhCache, JavaMail, Quartz...|org.springframework:spring-context-support
+Spring TX|Spring Transaction Management Abstraction|org.springframework:spring-tx
+Spring JDBC|Spring JDBC Data Access Library |org.springframework:spring-jdbc
+Spring ORM|Object-to-Relation-Mapping (ORM) integration with Hibernate, JPA and iBatis.|org.springframework:spring-orm
+Spring OXM|Object-to-XML Mapping (OXM) abstraction and integration with JAXB, JiBX...|org.springframework:spring-oxm
+Spring Web|Spring Web application development utilities applicable to both Servlet and Portlet Environments|org.springframework:spring-web
+Spring MVC|Spring MVC for Servlet Environments |org.springframework:spring-webmvc
+Spring portlet|Spring MVC for Portlet Environments|org.springframework:spring-webmvc-portlet
+Spring Test|Support for testing Spring applications with tools such as JUnit and TestNG|org.springframework:spring-test
+Spring Cloud|Spring Cloud provides tools for developers to quickly build some of the common patterns in distributed systems|org.springframework.cloud:spring-cloud-dependencies
+Spring Cloud Data Flow|Microservice based Streaming and Batch data processing for Cloud Foundry and Kubernetes|org.springframework.cloud:spring-cloud-dataflow-dependencies
+Spring Data|Spring Data’s mission is to provide a familiar and consistent, Spring-based programming model for data access|org.springframework.data:spring-data-jpa
+Spring Security|Spring Security is a powerful and highly customizable authentication and access-control framework|org.springframework.security:spring
+Spring Session|Spring Session provides an API and implementations for managing a user’s session information|org.springframework.session:spring-session
+Spring Integration|Extends the Spring programming model to support the well-known Enterprise Integration Patterns|org.springframework.integration:spring-integration-core
+Spring HATEOAS|Spring HATEOAS provides some APIs to ease creating REST representations that follow the HATEOAS principle|org.springframework.hateoas:spring-hateoas
+Spring REST Docs|Spring REST Docs helps you to document RESTful services|org.springframework.restdocs:spring-restdocs-mockmvc
+Spring Batch|A lightweight, comprehensive batch framework designed to enable the development of robust batch applications|org.springframework.batch:spring-batch-core
+Spring AMQP|The Spring AMQP project applies core Spring concepts to the development of AMQP-based messaging solutions|org.springframework.amqp:spring-amqp
+Spring for Android|framework that is designed to provide components of the Spring family of projects for use in Android apps|org.springframework.android:spring-android-core
+Spring CredHub|provides client-side support for storing, retrieving, and deleting credentials from a CredHub server running in a Cloud Foundry platform|org.springframework.credhub:spring-credhub-dependencies
+Spring Flo|Spring Flo is a JavaScript library that offers a basic embeddable HTML5 visual builder for pipelines and simple graphs|org.webjars.bower:spring-flo
+Spring for Apache Kafka|applies core Spring concepts to the development of Kafka-based messaging solutions|org.springframework.kafka:spring-kafka
+Spring LDAP|Spring LDAP is a library to simplify LDAP programming in Java, built on the same principles as Spring Jdbc|org.springframework.ldap:spring-ldap-core
+Spring Mobile|provides capabilities to detect the type of device making a request to your Spring web site and serve alternative views based on that device|org.springframework.mobile:spring-mobile-device
+Spring Shell|Users of the Spring Shell project can easily build a full featured shell ( aka command line) application by depending on the Spring Shell jars and adding their own commands|org.springframework.shell:spring-shell-starter
+Spring Statemachine|Spring Statemachine is a framework for application developers to use state machine concepts with Spring applications|org.springframework.statemachine:spring-statemachine-core
+Spring Vault|Spring Vault provides familiar Spring abstractions and client-side support for accessing, storing and revoking secrets|org.springframework.vault:spring-vault-dependencies
+Spring Web Flow|Spring Web Flow builds on Spring MVC and allows implementing the "flows" of a web application|org.springframework.webflow:spring-webflow
+Spring Web Services|Spring Web Services (Spring-WS) is a product of the Spring community focused on creating document-driven Web services|org.springframework.ws:spring-ws

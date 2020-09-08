@@ -1,0 +1,1 @@
+Spring for Android|framework that is designed to provide components of the Spring family of projects for use in Android apps|org.springframework.android:spring-android-core

@@ -1,0 +1,3 @@
+Apache Commons Jexl|Expression language which extends the Expression Language of the JSTL|org.apache.commons:commons-jexl3
+Apache Commons OGNL|An Object-Graph Navigation Language|ognl:ognl
+Spring expression|Spring Expression Language|org.springframework:spring-expression

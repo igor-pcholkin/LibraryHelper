@@ -1,0 +1,41 @@
+BCEL|Byte Code Engineering Library - analyze, create, and manipulate Java class files|org.apache.bcel:bcel
+BeanUtils|Easy-to-use wrappers around the Java reflection and introspection APIs|commons-beanutils:commons-beanutils
+BSF|Bean Scripting Framework - interface to scripting languages, including JSR-223|bsf:bsf
+Chain|Chain of Responsibility pattern implemention|commons-chain:commons-chain
+CLI|Command Line arguments parser|commons-cli:commons-cli
+Codec|General encoding/decoding algorithms (for example phonetic, base64, URL)|commons-codec:commons-codec
+Collections|Extends or augments the Java Collections Framework|org.apache.commons:commons-collections4
+Compress|Defines an API for working with tar, zip and bzip2 files|org.apache.commons:commons-compress
+Configuration|Reading of configuration/preferences files in various formats|org.apache.commons:commons-configuration2
+Crypto|A cryptographic library optimized with AES-NI wrapping Openssl or JCE algorithm implementations|org.apache.commons:commons-crypto
+CSV|Component for reading and writing comma separated value files|org.apache.commons:commons-csv
+Daemon|Alternative invocation mechanism for unix-daemon-like java code|commons-daemon:commons-daemon
+DBCP|Database connection pooling services|org.apache.commons:commons-dbcp2
+DbUtils|JDBC helper library|commons-dbutils:commons-dbutils
+Digester|XML-to-Java-object mapping utility|org.apache.commons:commons-digester3
+Email|Library for sending e-mail from Java|org.apache.commons:commons-email
+Exec|API for dealing with external process execution and environment management in Java|org.apache.commons:commons-exec
+FileUpload|File upload capability for your servlets and web applications|commons-fileupload:commons-fileupload
+Geometry|Space and coordinates|org.apache.commons:commons-geometry-parent
+Imaging (previously called Sanselan)|A pure-Java image library|org.apache.commons:commons-imaging
+IO|Collection of I/O utilities|commons-io:commons-io
+JCI|Java Compiler Interface|org.apache.commons:commons-jci
+JCS|Java Caching System|org.apache.commons:commons-jcs
+Jelly|XML based scripting and processing engine|commons-jelly:commons-jelly
+Jexl|Expression language which extends the Expression Language of the JSTL|org.apache.commons:commons-jexl3
+JXPath|Utilities for manipulating Java Beans using the XPath syntax|commons-jxpath:commons-jxpath
+Lang|Provides extra functionality for classes in java.lang|org.apache.commons:commons-lang3
+Logging|Wrapper around a variety of logging API implementations|commons-logging:commons-logging
+Math|Lightweight, self-contained mathematics and statistics components|org.apache.commons:commons-math3
+Net|Collection of network utilities and protocol implementations|commons-net:commons-net
+Numbers|Number types (complex, quaternion, fraction) and utilities (arrays, combinatorics)|org.apache.commons:commons-numbers-parent
+OGNL|An Object-Graph Navigation Language|ognl:ognl
+Pool|Generic object pooling component|org.apache.commons:commons-pool2
+Proxy|Library for creating dynamic proxies|org.apache.commons:commons-proxy
+RDF|Common implementation of RDF 1.1 that could be implemented by systems on the JVM|org.apache.commons:commons-rdf-parent
+RNG|Implementations of random numbers generators|org.apache.commons:commons-rng-parent
+SCXML|An implementation of the State Chart XML specification aimed at creating and maintaining a Java SCXML engine|commons-scxml:commons-scxml
+Text|Apache Commons Text is a library focused on algorithms working on strings|org.apache.commons:commons-text
+Validator|Framework to define validators and validation rules in an xml file|commons-validator:commons-validator
+VFS|Virtual File System component for treating files, FTP, SMB, ZIP and such like as a single logical file system|org.apache.commons:commons-vfs2
+Weaver|Provides an easy way to enhance (weave) compiled bytecode|org.apache.commons:commons-weaver-parent

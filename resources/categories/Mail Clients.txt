@@ -1,0 +1,1 @@
+Apache Commons Email|Library for sending e-mail from Java|org.apache.commons:commons-email

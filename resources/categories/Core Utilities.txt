@@ -1,0 +1,2 @@
+Guava|Google core libraries for Java|com.google.guava:guava
+Apache Commons Lang|Provides extra functionality for classes in java.lang|org.apache.commons:commons-lang3

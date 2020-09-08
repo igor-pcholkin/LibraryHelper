@@ -1,0 +1,2 @@
+Apache Commons Collections|Extends or augments the Java Collections Framework|org.apache.commons:commons-collections4
+Guava|Google core libraries for Java|com.google.guava:guava

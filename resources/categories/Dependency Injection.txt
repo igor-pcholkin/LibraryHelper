@@ -1,0 +1,2 @@
+Spring|This is the central artifact for Spring's Dependency Injection Container|org.springframework:spring-context
+Guice|lightweight dependency injection framework for Java 6 and above, brought to you by Google|com.google.inject:guice
