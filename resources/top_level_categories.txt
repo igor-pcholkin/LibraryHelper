@@ -100,3 +100,5 @@ ElasticSearch Clients
 Spring framework
 Apache Commons
 Scripting languages
+JDBC drivers
+NOSQL drivers

@@ -1,0 +1,11 @@
+MSSql|MSSql JDBC driver|com.microsoft.sqlserver:mssql-jdbc
+Oracle|Oracle JDBC driver|com.oracle:ojdbc14
+PostgreSQL|PostgreSQL JDBC driver|org.postgresql:postgresql
+MySQL|MySQL JDBC driver|mysql:mysql-connector-java
+H2|H2 JDBC driver|com.h2database:h2
+Sqlite|Sqlite JDBC driver|org.xerial:sqlite-jdbc
+Maria DB|Maria DB JDBC driver|org.mariadb.jdbc:mariadb-java-client
+Cubrid|Cubrid JDBC driver|cubrid:cubrid-jdbc
+Firebird|Firebird JDBC driver|org.firebirdsql.jdbc:jaybird
+IBM DB2|IBM DB2 JDBC driver|com.ibm.db2:jcc,com.ibm.db2.jcc:db2jcc4
+Informix|Informix JDBC driver|com.ibm.informix:jdbc

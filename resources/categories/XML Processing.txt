@@ -1,4 +1,19 @@
+Jackson XML|Jackson is a suite of data-processing tools for Java including the flagship streaming JSON parser / generator library, matching data-binding library (POJOs to and from JSON) and additional data format modules to process data encoded in Avro, BSON, CBOR, CSV, Smile, (Java) Properties, Protobuf, XML or YAML|com.fasterxml.jackson.dataformat:jackson-dataformat-xml
+dom4j|Flexible XML framework for Java|dom4j:dom4j
+JAXB|Software framework that allows Jakarta EE developers to map Java classes to XML representations|javax.xml:jaxb-api
+Xerces|Apache's collection of software libraries for parsing, validating, serializing and manipulating XML|xerces:xercesImpl
+Xalan|Xalan is a popular open source software library from the Apache Software Foundation, that implements the XSLT 1.0 XML transformation language and the XPath 1.0 language.|xalan:xalan
 Apache Commons Digester|XML-to-Java-object mapping utility|org.apache.commons:commons-digester3
 Apache Commons Jelly|XML based scripting and processing engine|commons-jelly:commons-jelly
 Apache Commons SCXML|An implementation of the State Chart XML specification aimed at creating and maintaining a Java SCXML engine|commons-scxml:commons-scxml
 Apache Commons Validator|Framework to define validators and validation rules in an xml file|commons-validator:commons-validator
+JAXP|Java API for XML Processing|javax.xml:jaxp-api
+JAXM|Java API for XML Messaging|javax.xml:jaxm-api
+JAX-RPC|Java API for XML-based RPC|javax.xml:jaxrpc-api
+JAXR|Java API for XML Registries|javax.xml:jaxr-api
+JAX-WS|Jakarta XML Web Services|javax.xml.ws:jaxws-api
+JAX-RS|Jakarta RESTful Web Services|javax.ws.rs:javax.ws.rs-api
+XQJ|Java API for XQuery|javax.xml.xquery:xqj-api
+StAX|Streaming XML processing|stax:stax,stax:stax-api
+Saxon|Alternative highly specification-compliant XSLT/XPath/XQuery processor (supports both XSLT 1.0 and 2.0)|net.sourceforge.saxon:saxon
+Woodstox|An open-source StAX and SAX (as of version 3.2) implementation|com.fasterxml.woodstox:woodstox-core

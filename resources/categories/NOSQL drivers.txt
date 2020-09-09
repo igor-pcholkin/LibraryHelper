@@ -1,0 +1,11 @@
+Cassandra|Cassandra driver|com.datastax.cassandra:cassandra-driver-core,com.datastax.cassandra:cassandra-driver-mapping,com.datastax.cassandra:cassandra-driver-extras
+MongoDB|MongoDB driver|org.mongodb:mongo-java-driver
+ArangoDB|ArangoDB driver|com.arangodb:arangodb-java-driver
+Couchbase|Couchbase client|com.couchbase.client:couchbase-client
+DynamoDB|DynamoDB|software.amazon.awssdk:dynamodb
+FaunaDB|FaunaDB revolutionizes the database into a productive, programmable, secure and operations-free data API with GraphQL|com.faunadb:faunadb-java,com.faunadb:faunadb-java,com.faunadb:faunadb-scala_2.11,com.faunadb:faunadb-scala_2.12
+Hazelcast|Hazelcast IMDG is an open source in-memory data grid based on Java|com.hazelcast:hazelcast
+Neo4j|Neo4j|org.neo4j:neo4j
+Redis|Redis|redis.clients:jedis
+Xodus|JetBrains Xodus is a transactional schema-less embedded database that is written in Java and Kotlin|org.jetbrains.xodus:xodus-openAPI
+Eclipse JNoSQL|Java framework that streamlines the integration of Java applications with NoSQL databases|org.jnosql.diana:diana-document,org.jnosql.diana:diana-key-value,org.jnosql.diana:diana-column
