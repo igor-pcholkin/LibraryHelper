@@ -1,0 +1,12 @@
+MyBatis|MyBatis is a so-called persistence framework for Java applications, that makes it easier and faster to work with relational (SQL) databases|org.mybatis:mybatis
+Hibernate|open-source ORM framework, widely used|org.hibernate:hibernate-core
+ActiveJDBC|Java implementation of Active record pattern, inspired by Ruby on Rails|org.javalite:activejdbc
+Apache Cayenne|open-source for Java|org.apache.cayenne:cayenne-server
+Apache OpenJPA|open-source for Java|org.apache.openjpa:openjpa
+DataNucleus|open-source JDO and JPA implementation (formerly known as JPOX)|org.datanucleus:datanucleus-jpa
+Ebean|open-source ORM framework|io.ebean:ebean
+EclipseLink|Eclipse persistence platform|org.eclipse.persistence:eclipselink
+Java Data Objects (JDO)|Java Data Objects (JDO) is a specification of Java object persistence|javax.jdo:jdo-api
+JOOQ|Object Oriented Querying (jOOQ)|org.jooq:jooq
+Kodo|commercial implementation of both Java Data Objects and Java Persistence API|tools.devnull:kodo
+TopLink|Oracle TopLink is a mapping and persistence framework for Java developers|com.oracle.toplink:toplink

@@ -1,1 +1,2 @@
 Apache Commons Net|Collection of network utilities and protocol implementations|commons-net:commons-net
+Apache Mina|Apache Mina is a network application framework with which developers can easily create highly scalable and performant network applications|org.apache.mina:mina-core

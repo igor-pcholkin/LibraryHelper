@@ -14,3 +14,6 @@ AssertJ|provides a rich set of assertions, truly helpful error messages, improve
 Hamcrest|It supports creating customized assertion matchers ('Hamcrest' is an anagram of 'matchers'), allowing match rules to be defined declaratively|org.hamcrest:hamcrest-all
 JSONAssert|Converts your string into a JSON object and compares the logical structure and data with the actual JSON|org.skyscreamer:jsonassert
 JSONPath|Allows to check for specific aspects of the response|com.jayway.jsonpath:json-path
+Thruth (Google)|Truth makes your test assertions and failure messages more readable|com.google.truth:truth
+valid4j|valid4j is a simple assertion and validation library for Java|org.valid4j:valid4j
+datasource-assert|provides assertion API for DataSource to validate query executions|net.ttddyy:datasource-assert

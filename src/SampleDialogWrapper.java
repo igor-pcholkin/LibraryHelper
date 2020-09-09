@@ -14,6 +14,7 @@ import javax.swing.event.ListDataListener;
 import java.awt.*;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.joining;
 import static javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER;
 import static javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED;
 import static javax.swing.SwingConstants.LEFT;
@@ -92,7 +93,9 @@ public class SampleDialogWrapper extends DialogWrapper {
   private void updateArtefactInfo() {
     if (artefactsUIList.getSelectedIndex() >= 0) {
       Dependency dependency = (Dependency) artefactsUIList.getModel().getElementAt(artefactsUIList.getSelectedIndex());
-      artefactInfo.setText(dependency.getGroup() + ":" + dependency.getArtfefact());
+      String allArtefacts = dependency.getArtefacts().stream().map(a -> a.getGroupId() + ":" + a.getArtefactId())
+              .collect(joining( "," ));
+      artefactInfo.setText(allArtefacts);
       artefactDescription.setText(dependency.getDescription());
     } else {
       artefactInfo.setText("");

@@ -1,0 +1,9 @@
+jSoup|jsoup is a Java library for working with real-world HTML|org.jsoup:jsoup
+HtmlCleaner|HtmlCleaner is an open source HTML parser written in Java|net.sourceforge.htmlcleaner:htmlcleaner
+TagSoup|SAX-compliant parser written in Java that, instead of parsing well-formed or valid XML, parses HTML as it is found in the wild|org.ccil.cowan.tagsoup:tagsoup
+HTML Parser|Java library used to parse HTML in either a linear or nested fashion.|org.htmlparser:htmlparser
+HtmlUnit|"GUI-Less browser for Java programs". It models HTML documents and provides an API that allows you to invoke pages, fill out forms, click links, etc..|net.sourceforge.htmlunit:htmlunit
+JTidy|Java port of HTML Tidy, a HTML syntax checker and pretty printer.|jtidy:jtidy
+NekoHTML|simple HTML scanner and tag balancer that enables application programmers to parse HTML documents and access the information using standard XML interfaces|net.sourceforge.nekohtml:nekohtml
+Web-Harvest|Open Source Web Data Extraction tool written in Java|net.sourceforge.web-harvest:webharvest
+Jericho|HTML Parser is a java library allowing analysis and manipulation of parts of an HTML document, including server-side tags|net.htmlparser.jericho:jericho-html

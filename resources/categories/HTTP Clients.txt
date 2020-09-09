@@ -1,1 +1,4 @@
 Apache client|HttpClient is a HTTP/1.1 compliant HTTP agent implementation based on HttpCore|org.apache.httpcomponents:httpclient
+Unirest|Unirest is a set of lightweight HTTP libraries available in multiple languages|com.mashape.unirest:unirest-java
+OkHttp|TTP client with an eye on efficiency as it provides native HTTP/2 support, Conneciton pooling, transparent GZIP shrinks and response cachine|com.squareup.okhttp3:okhttp
+Google HTTP Client|Google HTTP Client Library for Java is a flexible, efficient, and powerful Java library for accessing any resource on the web via HTTP|com.google.http-client:google-http-client

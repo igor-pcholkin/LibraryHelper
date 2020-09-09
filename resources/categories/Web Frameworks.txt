@@ -1,0 +1,15 @@
+Blade|lightweight and high-performance Java framework that allows you to build fast web applications in a straightforward way|com.bladejava:blade-mvc
+Dropwizard|high-performance but straightforward Java framework for rapid development of RESTful web services|io.dropwizard:dropwizard-core
+Grails|web application framework that uses the Groovy programming language|org.grails:grails-dependencies
+GWT|Google Web Toolkit: client-side Java apps deployed as JavaScript|com.google.gwt:gwt-user
+JavaServer Faces (JSF)| Component-based UI framework|javax.faces:jsf-api
+JHipster|Web apps and microservices with Spring Boot and Angular/React|io.github.jhipster:jhipster-dependencies
+Spring Boot|"makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run""|org.springframework.boot:spring-boot-starter-web
+Play|Reactive web & mobile framework for highly scalable Java applications|com.typesafe.play:play-java_2.10,com.typesafe.play:play-java_2.11,com.typesafe.play:play-java_2.12,com.typesafe.play:play-java_2.13
+PrimeFaces|UI framework for Java EE and JavaServer Faces|org.primefaces:primefaces
+Spark|With Spark, you can painlessly develop web applications, microservices, and REST APIs.|com.sparkjava:spark-core,com.sparkjava:spark-kotlin
+Struts|MVC framework for enterprise-level Java applications|struts:struts,org.apache.struts:struts2-core
+Tapestry|Component-oriented framework for highly scalable apps|org.apache.tapestry:tapestry-core
+Vaadin|Web application framework with a focus on UX, accessibility, and mobile|com.vaadin:vaadin
+Vert.x|Polyglot event-driven application framework for the Java Virtual Machine|io.vertx:vertx-dependencies
+Wicket|Component-based web application framework for purists|org.apache.wicket:wicket-core

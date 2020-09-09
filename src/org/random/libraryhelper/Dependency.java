@@ -1,32 +1,16 @@
 package org.random.libraryhelper;
 
+import java.util.List;
+
 public class Dependency {
-  String group;
-  String artfefact;
+  List<Artefact> artefacts;
   String name;
   String description;
 
-  public Dependency(String group, String artefact, String name, String description) {
-    this.group = group;
-    this.artfefact = artefact;
+  public Dependency(List<Artefact> artefacts, String name, String description) {
+    this.artefacts = artefacts;
     this.name = name;
     this.description = description;
-  }
-
-  public String getGroup() {
-    return group;
-  }
-
-  public void setGroup(String group) {
-    this.group = group;
-  }
-
-  public String getArtfefact() {
-    return artfefact;
-  }
-
-  public void setArtfefact(String artfefact) {
-    this.artfefact = artfefact;
   }
 
   public String getName() {
@@ -45,11 +29,18 @@ public class Dependency {
     this.description = description;
   }
 
+  public List<Artefact> getArtefacts() {
+    return artefacts;
+  }
+
+  public void setArtefacts(List<Artefact> artefacts) {
+    this.artefacts = artefacts;
+  }
+
   @Override
   public String toString() {
     return "Dependency{" +
-            "group='" + group + '\'' +
-            ", artfefact='" + artfefact + '\'' +
+            "artefacts=" + artefacts +
             ", name='" + name + '\'' +
             ", description='" + description + '\'' +
             '}';

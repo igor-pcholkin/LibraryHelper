@@ -16,7 +16,6 @@ Web Frameworks
 Reflection Libraries
 Build Models
 Bytecode Libraries
-Assertion Libraries
 Embedded SQL Databases
 Collections
 Aspect Oriented
@@ -25,7 +24,7 @@ Code Analyzers
 Date and Time Utilities
 Validation Frameworks
 Language Runtime
-Object/Relational Mapping
+Object-Relational Mapping
 Command Line Parsers
 Expression Languages
 Object Serialization
@@ -50,7 +49,7 @@ Encryption Libraries
 Eclipse Runtime
 Concurrency Libraries
 PostgreSQL Drivers
-HTML Parsers
+HTML Processing
 JDBC Extensions
 Math Libraries
 Network App Frameworks
@@ -61,14 +60,12 @@ REST Framework
 Distributed Coordination
 CSV Libraries
 Security Frameworks
-Redis Clients
 Object Pools
 Cloud Computing
 String Utilities
 Eclipse Plugins
 Distributed Computing
 Web Testing
-MongoDB Clients
 Message Brokers
 Actor Frameworks
 MIME Types Libraries
@@ -102,3 +99,4 @@ Apache Commons
 Scripting languages
 JDBC drivers
 NOSQL drivers
+Persistence Frameworks
