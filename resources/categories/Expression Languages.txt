@@ -1,3 +1,6 @@
 Apache Commons Jexl|Expression language which extends the Expression Language of the JSTL|org.apache.commons:commons-jexl3
 Apache Commons OGNL|An Object-Graph Navigation Language|ognl:ognl
 Spring expression|Spring Expression Language|org.springframework:spring-expression
+Automaton|This package contains a full DFA/NFA implementation with Unicode alphabet and support for all standard regular expression operations.|dk.brics.automaton:automaton
+OROMatcher|OROMatcher is a set of regular expression pattern matching and utility classes for Java|oro:oro
+RNGOM|open-source Java library for parsing RELAX NG grammars|org.kohsuke.rngom:rngom

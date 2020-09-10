@@ -1,0 +1,1 @@
+StreamEx|StreamEx is a library that provides additional functionality for the standard Stream API along with the performance improvements|one.util:streamex

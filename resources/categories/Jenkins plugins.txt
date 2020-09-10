@@ -1,0 +1,1 @@
+CodeCover|This plugin allows you to capture code coverage report from CodeCover|org.jenkins-ci.plugins:codecover

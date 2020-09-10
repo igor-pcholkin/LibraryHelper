@@ -1,1 +1,5 @@
 Apache Commons IO|Collection of I/O utilities|commons-io:commons-io
+JediTerm|Java Terminal Emulator. Works with SSH and PTY|org.jetbrains.jediterm:jediterm-pty
+JimFS|An in-memory file system for Java 7+ - GitHub|com.google.jimfs:jimfs
+Pty4J|Pseudo terminal(PTY) implementation in Java|org.jetbrains.pty4j:pty4j
+PureJavaComm|Application Programmin Interface (API) for accessing serial ports from Java|com.github.purejavacomm:purejavacomm

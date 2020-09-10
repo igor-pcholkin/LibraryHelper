@@ -1,0 +1,3 @@
+[ini4j]| - Java API for handling Windows ini file format|org.ini4j:ini4j
+HttpMime|HttpClient - MIME coded entities|org.apache.httpcomponents:httpmime
+Snakeyaml|Yaml parser|org.yaml:snakeyaml

@@ -1,0 +1,2 @@
+JSch|JSch is a pure Java implementation of SSH2|com.jcraft:jsch,jsch:jsch
+JSch Agent Proxy|A proxy to ssh-agent and Pageant in Java|com.jcraft:jsch.agentproxy

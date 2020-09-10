@@ -1,2 +1,4 @@
 Apache Commons BCEL|Byte Code Engineering Library - analyze, create, and manipulate Java class files|org.apache.bcel:bcel
 Apache Commons Weaver|Provides an easy way to enhance (weave) compiled bytecode|org.apache.commons:commons-weaver-parent
+ASM|ASM is an all purpose Java bytecode manipulation and analysis framework|asm:asm
+cglib|Code Generation Library|cglib:cglib

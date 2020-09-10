@@ -1,2 +1,3 @@
 Guava|Google core libraries for Java|com.google.guava:guava
 Apache Commons Lang|Provides extra functionality for classes in java.lang|org.apache.commons:commons-lang3
+Joda-Time|Joda-Time provides a quality replacement for the Java date and time classes|joda-time:joda-time

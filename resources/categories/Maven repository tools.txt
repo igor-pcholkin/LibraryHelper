@@ -1,0 +1,1 @@
+Aether|Aether is a library for working with artifact repositories.|org.eclipse.aether:aether-api

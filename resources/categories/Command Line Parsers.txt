@@ -1,1 +1,2 @@
 Apache Commons CLI|Command Line arguments parser|commons-cli:commons-cli
+Spullara CLI Parser|CLI Parser is a tiny (10k jar), super easy to use library for parsing various kinds of command line arguments or property lists|com.github.spullara.cli-parser:cli-parser

@@ -24,7 +24,6 @@ Code Analyzers
 Date and Time Utilities
 Validation Frameworks
 Language Runtime
-Object-Relational Mapping
 Command Line Parsers
 Expression Languages
 Object Serialization
@@ -37,7 +36,7 @@ Web Servers
 MySQL Drivers
 JDBC Pools
 Web Applications
-Scala Compilers
+Compilers
 YAML Parsers
 Cache Implementations
 Compression Libraries
@@ -85,7 +84,7 @@ SSH Libraries
 Console Utilities
 Native Access Tools
 FTP Clients and Servers
-Annotation Processing Tools
+Annotation libraries
 Git Tools
 OAuth Libraries
 JWT Libraries
@@ -100,3 +99,11 @@ Scripting languages
 JDBC drivers
 NOSQL drivers
 Persistence Frameworks
+Maven repository tools
+IDE tools
+Graphics And UI
+Machine Learning
+Jenkins plugins
+Google Services
+Data Formats
+Java tools

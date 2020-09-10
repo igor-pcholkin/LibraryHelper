@@ -1,1 +1,2 @@
 Apache Commons BeanUtils|Easy-to-use wrappers around the Java reflection and introspection APIs|commons-beanutils:commons-beanutils
+FEST Reflection| Fluent Interface that simplifies usage of Java Reflection|org.easytesting:fest-reflect

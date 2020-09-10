@@ -1,4 +1,5 @@
 JUnit|A unit testing framework|junit:junit
+Serenity BDD|Serenity BDD is a test automation library designed to make writing automated acceptance tests easier, and more fun|net.serenity-bdd:serenity-core
 REST Assured|Java DSL for simplifying testing of REST based services built on top of HTTP Builder|io.rest-assured:rest-assured
 Selenium|Allows you to test your JSP pages without launching them in a browser|org.seleniumhq.selenium:selenium-java
 TestNG|testing framework inspired by JUnit and NUnit but introducing many new functionalities|org.testng:testng
@@ -17,3 +18,6 @@ JSONPath|Allows to check for specific aspects of the response|com.jayway.jsonpat
 Thruth (Google)|Truth makes your test assertions and failure messages more readable|com.google.truth:truth
 valid4j|valid4j is a simple assertion and validation library for Java|org.valid4j:valid4j
 datasource-assert|provides assertion API for DataSource to validate query executions|net.ttddyy:datasource-assert
+FEST Assert| a fluent interface for assertions|org.easytesting:fest-assert
+FEST Swing|intuitive API for functional testing of Swing user interfaces, resulting in tests that are compact, easy to write, and read like a specification|org.easytesting:fest-swing
+MultithreadedTC|A framework for testing concurrent Java applications|edu.umd.cs.mtc:multithreadedtc

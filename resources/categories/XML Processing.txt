@@ -3,6 +3,7 @@ dom4j|Flexible XML framework for Java|dom4j:dom4j
 JAXB|Software framework that allows Jakarta EE developers to map Java classes to XML representations|javax.xml:jaxb-api
 Xerces|Apache's collection of software libraries for parsing, validating, serializing and manipulating XML|xerces:xercesImpl
 Xalan|Xalan is a popular open source software library from the Apache Software Foundation, that implements the XSLT 1.0 XML transformation language and the XPath 1.0 language.|xalan:xalan
+XMLBeans|XMLBeans is a Java-to-XML binding framework which is part of the Apache Software Foundation XML project.|org.apache.xmlbeans:xmlbeans
 Apache Commons Digester|XML-to-Java-object mapping utility|org.apache.commons:commons-digester3
 Apache Commons Jelly|XML based scripting and processing engine|commons-jelly:commons-jelly
 Apache Commons SCXML|An implementation of the State Chart XML specification aimed at creating and maintaining a Java SCXML engine|commons-scxml:commons-scxml
@@ -17,3 +18,8 @@ XQJ|Java API for XQuery|javax.xml.xquery:xqj-api
 StAX|Streaming XML processing|stax:stax,stax:stax-api
 Saxon|Alternative highly specification-compliant XSLT/XPath/XQuery processor (supports both XSLT 1.0 and 2.0)|net.sourceforge.saxon:saxon
 Woodstox|An open-source StAX and SAX (as of version 3.2) implementation|com.fasterxml.woodstox:woodstox-core
+JDOM|JDOM is an open-source Java-based document object model for XML that was designed specifically for the Java platform so that it can take advantage of its language features|org.jdom:jdom,org.jdom:jdom2
+NanoXML|NanoXML is a small non-validating parser for Java|be.cyberelf.nanoxml:nanoxml
+Wadl|A small module providing some XSLT extensions to deal with WADL URI templates in an XSLT stylesheet|org.jvnet.ws.wadl:wadl
+XPP|Xml Pull parsing|xpp3:xpp3
+XStream|XStream is a simple library to serialize objects to XML and back again|com.thoughtworks.xstream:xstream

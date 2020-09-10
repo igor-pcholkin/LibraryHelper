@@ -1,0 +1,4 @@
+JaCoCo Maven Plugin|provides the JaCoCo runtime agent to your tests and allows basic report creation|org.jacoco:jacoco-maven-plugin
+Cobertura|This is the Mojo's Maven plugin for Cobertura. Cobertura is a free Java tool that calculates the percentage of code accessed by tests.|org.codehaus.mojo:cobertura-maven
+Serenity BDD|Serenity BDD maven plugin|net.serenity-bdd.maven.plugins:serenity-maven-plugin
+EMMA|EMMA is an open-source toolkit for measuring and reporting Java code coverage|org.codehaus.mojo:emma-maven-plugin

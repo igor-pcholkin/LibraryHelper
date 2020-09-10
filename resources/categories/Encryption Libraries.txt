@@ -1,1 +1,4 @@
 Apache Commons Crypto|A cryptographic library optimized with AES-NI wrapping Openssl or JCE algorithm implementations|org.apache.commons:commons-crypto
+Bouncy Castle Provider|The Bouncy Castle Crypto package is a Java implementation of cryptographic algorithms|org.bouncycastle:bcprov-jdk15on
+EdDSA-Java| Pure Java implementation of EdDSA|net.i2p.crypto:eddsa
+jBCrypt|implementation the OpenBSD Blowfish password hashing algorithm|org.mindrot:jbcrypt

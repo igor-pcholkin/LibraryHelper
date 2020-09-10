@@ -1,0 +1,5 @@
+JaCoCO|JaCoCo uses class file instrumentation to record execution coverage data|org.jacoco:org.jacoco.agent
+OpenClover|OpenClover is a free and open-source successor of Atlassian Clover|org.openclover:clover
+Cobertura|Cobertura is an open-source tool for measuring code coverage. It does so by instrumenting the byte code|cobertura:cobertura
+EcLemma|EclEmma is a free Java code coverage tool for Eclipse, available under the Eclipse Public License.|com.mountainminds.eclemma:core
+Clover|Clover is an award winning code coverage and testing tool for Java and Groovy.com.|atlassian.clover:clover

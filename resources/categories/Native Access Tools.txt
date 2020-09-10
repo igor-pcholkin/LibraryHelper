@@ -1,0 +1,2 @@
+JNA|JNA provides Java programs easy access to native shared libraries without writing anything but Java code|com.sun.jna:jna
+Winp|Windows Process Library|org.jvnet.winp:winp

@@ -1,3 +1,4 @@
 Xalan|Xalan is a popular open source software library from the Apache Software Foundation, that implements the XSLT 1.0 XML transformation language and the XPath 1.0 language.|xalan:xalan
 Xsoup|XPath selector based on Jsoup (htmp parser)|us.codecraft:xsoup
 Saxon|Alternative highly specification-compliant XSLT/XPath/XQuery processor (supports both XSLT 1.0 and 2.0)|net.sourceforge.saxon:saxon
+Jaxen|XPath Engine for Java|jaxen:jaxen

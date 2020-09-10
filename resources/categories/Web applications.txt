@@ -1,0 +1,1 @@
+Java Web Start|framework developed by Sun Microsystems (now Oracle) that allows users to start application software for the Java Platform directly from the Internet using a web browser|javax.jnlp:javaws

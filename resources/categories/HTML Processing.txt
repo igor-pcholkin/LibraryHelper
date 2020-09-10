@@ -7,3 +7,4 @@ JTidy|Java port of HTML Tidy, a HTML syntax checker and pretty printer.|jtidy:jt
 NekoHTML|simple HTML scanner and tag balancer that enables application programmers to parse HTML documents and access the information using standard XML interfaces|net.sourceforge.nekohtml:nekohtml
 Web-Harvest|Open Source Web Data Extraction tool written in Java|net.sourceforge.web-harvest:webharvest
 Jericho|HTML Parser is a java library allowing analysis and manipulation of parts of an HTML document, including server-side tags|net.htmlparser.jericho:jericho-html
+markdown4j|open-source java extensible markdown processor|org.markdownj:markdownj

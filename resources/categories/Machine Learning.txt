@@ -1,0 +1,2 @@
+OpenIMAJ|OpenIMAJ is set of Java libraries focused not only on computer vision and video processing but also machine learning|org.openimaj:core-image
+OpenCV| (Open Source Computer Vision Library) is a library of programming functions mainly aimed at real-time computer vision|opencv:opencv

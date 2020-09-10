@@ -1,0 +1,2 @@
+Jetbrains Annotations|IntelliJ IDEA annotations library|org.jetbrains:annotations
+JCIP|"Java Concurrency In Practice" Book Annotations|net.jcip:jcip-annotations

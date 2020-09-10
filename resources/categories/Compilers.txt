@@ -1,0 +1,3 @@
+ECJ| Eclipse Java Compiler|org.eclipse.jdt.core.compiler:ecj
+Groovy|Groovy: A powerful, dynamic language for the JVM|org.codehaus.groovy:groovy-all
+Javac2|IntelliJ Java compiler|com.intellij:javac2

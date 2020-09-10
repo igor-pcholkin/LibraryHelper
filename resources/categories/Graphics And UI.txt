@@ -1,0 +1,10 @@
+Apache Batik|Batik is a pure-Java library that can be used to render, generate, and manipulate SVG graphics|org.apache.xmlgraphics:batik-all
+Imaging (previously called Sanselan)|A pure-Java image library|org.apache.commons:commons-imaging
+ImageJ|ImageJ is a Java-based software created for working with images|net.imagej:ij
+OpenIMAJ|OpenIMAJ is set of Java libraries focused not only on computer vision and video processing but also machine learning|org.openimaj:core-image
+TwelveMonkeys ImageIO|The TwelveMonkeys ImageIO library is intended as an extension to the Java ImageIO API, with support for a larger number of formats|com.twelvemonkeys.imageio:imageio-core,com.twelvemonkeys.imageio:imageio-jpeg
+Scalr|(imgscalr - A Java Image Scaling Library|org.imgscalr:imgscalr-lib
+JavaFX|OpenJFX is an open source, next generation client application platform for desktop, mobile and embedded systems built on Java|org.openjfx:javafx
+JGoodies|JGoodies FormLayout|com.jgoodies:jgoodies-forms
+Microba|Date picker for Swing|com.michaelbaranov:microba
+MiGLayout|Java Layout Manager for Swing|com.miglayout:miglayout-swing
