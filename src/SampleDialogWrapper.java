@@ -21,7 +21,6 @@ public class SampleDialogWrapper extends DialogWrapper {
   JComboBox categoriesComboBox;
   JComboBox versionsComboBox;
   JList artefactsUIList;
-  JTextField artefactInfo;
   JTextArea artefactDescription;
 
   java.util.List<String> categories;
@@ -58,14 +57,9 @@ public class SampleDialogWrapper extends DialogWrapper {
     artefactsUIList = new JBList();
     artefactsUIList.addListSelectionListener(e -> updateArtefactInfo());
 
-    artefactInfo = new JTextField();
-    artefactInfo.setEditable(false);
-    artefactInfo.setBackground(Gray._220);
-
     artefactDescription = new JTextArea();
     artefactDescription.setEditable(false);
     artefactDescription.setLineWrap(true);
-    artefactDescription.setFont(artefactInfo.getFont());
     artefactDescription.setBackground(Gray._220);
 
     versionsComboBox = new ComboBox();
@@ -79,11 +73,11 @@ public class SampleDialogWrapper extends DialogWrapper {
     leftPanel.setBorder(BorderFactory.createEmptyBorder());
 
     JPanel rightPanel = new JPanel(new BorderLayout());
-    JPanel basicInfoPanel = new JPanel(new BorderLayout());
-    basicInfoPanel.add(artefactInfo, BorderLayout.NORTH);
-    basicInfoPanel.add(versionsComboBox, BorderLayout.CENTER);
-    rightPanel.add(basicInfoPanel, BorderLayout.NORTH);
+    JPanel versionsPanel = new JPanel(new BorderLayout());
+    versionsPanel.add(new JLabel("Versions: "), BorderLayout.WEST);
+    versionsPanel.add(versionsComboBox, BorderLayout.CENTER);
     rightPanel.add(artefactDescription, BorderLayout.CENTER);
+    rightPanel.add(versionsPanel, BorderLayout.SOUTH);
     rightPanel.setMinimumSize(new Dimension(100, 300));
 
     JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, leftPanel, rightPanel);
@@ -103,7 +97,6 @@ public class SampleDialogWrapper extends DialogWrapper {
       updateUIFromLocalDependencyInfo(dependency);
       loadVersionsAndUpdateUI(dependency);
     } else {
-      artefactInfo.setText("");
       artefactDescription.setText("");
       versionsComboBox.removeAllItems();
     }
@@ -112,8 +105,7 @@ public class SampleDialogWrapper extends DialogWrapper {
   private void updateUIFromLocalDependencyInfo(Dependency dependency) {
     String allArtefacts = dependency.getArtefacts().stream().map(a -> a.getGroupId() + ":" + a.getArtefactId())
             .collect(joining( "," ));
-    artefactInfo.setText(allArtefacts);
-    artefactDescription.setText(dependency.getDescription());
+    artefactDescription.setText(allArtefacts + "\n\n" + dependency.getDescription());
   }
 
   private void loadVersionsAndUpdateUI(Dependency dependency) {
