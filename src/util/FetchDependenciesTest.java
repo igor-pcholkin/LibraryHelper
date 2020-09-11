@@ -10,10 +10,11 @@ public class FetchDependenciesTest {
     if (args.length == 0) {
       return;
     }
-    List<String> categories = DependencyLoader.readCategories();
+    DependencyLoader dependencyLoader = new DependencyLoader();
+    List<String> categories = dependencyLoader.readCategories();
     for (String category: categories) {
       System.out.println(String.format("--- Category: %s ---\n", category));
-      List<Dependency> dependencies = DependencyLoader.load(category);
+      List<Dependency> dependencies = dependencyLoader.loadLocalInfo(category);
       for (Dependency dependency: dependencies) {
         System.out.println(dependency);
       }

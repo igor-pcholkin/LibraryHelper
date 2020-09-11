@@ -3,25 +3,23 @@ import com.intellij.openapi.ui.DialogWrapper;
 import com.intellij.ui.Gray;
 import com.intellij.ui.components.JBList;
 import com.intellij.ui.components.JBScrollPane;
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 import org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;
 import org.random.libraryhelper.Dependency;
 import org.random.libraryhelper.DependencyLoader;
 
 import javax.annotation.Nullable;
 import javax.swing.*;
-import javax.swing.event.ListDataListener;
 import java.awt.*;
 import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.joining;
 import static javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER;
 import static javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED;
-import static javax.swing.SwingConstants.LEFT;
 
 public class SampleDialogWrapper extends DialogWrapper {
 
-  ComboBox categoriesComboBox;
+  JComboBox categoriesComboBox;
+  JComboBox versionsComboBox;
   JList artefactsUIList;
   JTextField artefactInfo;
   JTextArea artefactDescription;
@@ -29,11 +27,13 @@ public class SampleDialogWrapper extends DialogWrapper {
   java.util.List<String> categories;
 
   volatile String lastUpdatedCategory;
+  DependencyLoader dependencyLoader;
 
   public SampleDialogWrapper() {
     super(true); // use current window as parent
 
-    categories = DependencyLoader.readCategories();
+    dependencyLoader = new DependencyLoader();
+    categories = dependencyLoader.readCategories();
 
     init();
     setTitle("Choose dependency");
@@ -61,11 +61,15 @@ public class SampleDialogWrapper extends DialogWrapper {
     artefactInfo = new JTextField();
     artefactInfo.setEditable(false);
     artefactInfo.setBackground(Gray._220);
+
     artefactDescription = new JTextArea();
     artefactDescription.setEditable(false);
     artefactDescription.setLineWrap(true);
     artefactDescription.setFont(artefactInfo.getFont());
     artefactDescription.setBackground(Gray._220);
+
+    versionsComboBox = new ComboBox();
+    versionsComboBox.setBackground(Gray._250);
 
     JPanel leftPanel = new JPanel(new BorderLayout());
     leftPanel.add(categoriesComboBox, BorderLayout.NORTH);
@@ -75,7 +79,10 @@ public class SampleDialogWrapper extends DialogWrapper {
     leftPanel.setBorder(BorderFactory.createEmptyBorder());
 
     JPanel rightPanel = new JPanel(new BorderLayout());
-    rightPanel.add(artefactInfo, BorderLayout.NORTH);
+    JPanel basicInfoPanel = new JPanel(new BorderLayout());
+    basicInfoPanel.add(artefactInfo, BorderLayout.NORTH);
+    basicInfoPanel.add(versionsComboBox, BorderLayout.CENTER);
+    rightPanel.add(basicInfoPanel, BorderLayout.NORTH);
     rightPanel.add(artefactDescription, BorderLayout.CENTER);
     rightPanel.setMinimumSize(new Dimension(100, 300));
 
@@ -93,13 +100,29 @@ public class SampleDialogWrapper extends DialogWrapper {
   private void updateArtefactInfo() {
     if (artefactsUIList.getSelectedIndex() >= 0) {
       Dependency dependency = (Dependency) artefactsUIList.getModel().getElementAt(artefactsUIList.getSelectedIndex());
-      String allArtefacts = dependency.getArtefacts().stream().map(a -> a.getGroupId() + ":" + a.getArtefactId())
-              .collect(joining( "," ));
-      artefactInfo.setText(allArtefacts);
-      artefactDescription.setText(dependency.getDescription());
+      updateUIFromLocalDependencyInfo(dependency);
+      loadVersionsAndUpdateUI(dependency);
     } else {
       artefactInfo.setText("");
       artefactDescription.setText("");
+      versionsComboBox.removeAllItems();
+    }
+  }
+
+  private void updateUIFromLocalDependencyInfo(Dependency dependency) {
+    String allArtefacts = dependency.getArtefacts().stream().map(a -> a.getGroupId() + ":" + a.getArtefactId())
+            .collect(joining( "," ));
+    artefactInfo.setText(allArtefacts);
+    artefactDescription.setText(dependency.getDescription());
+  }
+
+  private void loadVersionsAndUpdateUI(Dependency dependency) {
+    java.util.List<String> versions = dependency.getArtefacts().stream().flatMap(artefactDescription ->
+            dependencyLoader.loadVersions(artefactDescription)
+            .stream()).collect(Collectors.toList());
+    versionsComboBox.removeAllItems();
+    for (String version: versions) {
+      versionsComboBox.addItem(version);
     }
   }
 
@@ -107,7 +130,7 @@ public class SampleDialogWrapper extends DialogWrapper {
     String selectedCategory = categoriesComboBox.getSelectedItem().toString();
     if (!selectedCategory.equals(lastUpdatedCategory)) {
       lastUpdatedCategory = selectedCategory;
-      java.util.List<Dependency> dependencies = DependencyLoader.load(selectedCategory);
+      java.util.List<Dependency> dependencies = dependencyLoader.loadLocalInfo(selectedCategory);
       artefactsUIList.setListData(dependencies.toArray());
       artefactsUIList.setCellRenderer(new DefaultListCellRenderer() {
         @Override

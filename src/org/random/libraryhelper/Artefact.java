@@ -1,8 +1,8 @@
 package org.random.libraryhelper;
 
 public class Artefact {
-  String groupId;
-  String artefactId;
+  private String groupId;
+  private String artefactId;
 
   public Artefact(String groupId, String artefactId) {
     this.groupId = groupId;
