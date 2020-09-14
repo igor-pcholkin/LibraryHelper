@@ -1,4 +1,4 @@
-package util;
+package test;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -14,7 +14,7 @@ import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
 
-public class FetchTopLevelCategories {
+public class FetchTopLevelCategoriesTest {
   public static void main(String args[]) throws IOException, XPathExpressionException {
     HttpClient httpClient = HttpClientBuilder.create().build();
     List<String> categories = new LinkedList<>();

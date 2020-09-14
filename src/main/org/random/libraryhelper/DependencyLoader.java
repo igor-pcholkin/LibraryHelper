@@ -18,7 +18,7 @@ import org.eclipse.aether.spi.connector.transport.TransporterFactory;
 import org.eclipse.aether.transport.file.FileTransporterFactory;
 import org.eclipse.aether.transport.http.HttpTransporterFactory;
 import org.eclipse.aether.version.Version;
-import util.FetchDependenciesTest;
+import test.FetchDependenciesTest;
 
 import java.io.InputStream;
 import java.util.Arrays;

@@ -1,3 +1,5 @@
+package org.random.libraryhelper;
+
 import com.intellij.openapi.ui.ComboBox;
 import com.intellij.openapi.ui.DialogWrapper;
 import com.intellij.ui.Gray;
