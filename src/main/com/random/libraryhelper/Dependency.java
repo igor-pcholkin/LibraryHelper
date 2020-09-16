@@ -1,4 +1,4 @@
-package org.random.libraryhelper;
+package com.random.libraryhelper;
 
 import java.util.List;
 

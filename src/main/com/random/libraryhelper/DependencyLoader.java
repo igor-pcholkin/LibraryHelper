@@ -1,4 +1,4 @@
-package org.random.libraryhelper;
+package com.random.libraryhelper;
 
 import org.apache.maven.repository.internal.MavenRepositorySystemUtils;
 import org.eclipse.aether.DefaultRepositorySystemSession;
@@ -18,7 +18,6 @@ import org.eclipse.aether.spi.connector.transport.TransporterFactory;
 import org.eclipse.aether.transport.file.FileTransporterFactory;
 import org.eclipse.aether.transport.http.HttpTransporterFactory;
 import org.eclipse.aether.version.Version;
-import test.FetchDependenciesTest;
 
 import java.io.InputStream;
 import java.util.Arrays;
@@ -68,7 +67,7 @@ public class DependencyLoader {
 
   public List<Dependency> loadLocalInfo(String category) {
     List<Dependency> dependencies = new LinkedList<>();
-    InputStream in = FetchDependenciesTest.class.getClassLoader()
+    InputStream in = DependencyLoader.class.getClassLoader()
             .getResourceAsStream(String.format("categories/%s.txt", category));
     Scanner scanner;
     try {
@@ -92,7 +91,7 @@ public class DependencyLoader {
 
   public List<String> readCategories() {
     List<String> categories = new LinkedList<>();
-    InputStream in = FetchDependenciesTest.class.getClassLoader()
+    InputStream in = DependencyLoader.class.getClassLoader()
             .getResourceAsStream("top_level_categories.txt");
     Scanner scanner = new Scanner(in);
     while (scanner.hasNextLine()) {

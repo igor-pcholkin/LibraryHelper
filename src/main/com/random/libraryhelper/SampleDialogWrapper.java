@@ -1,17 +1,19 @@
-package org.random.libraryhelper;
+package com.random.libraryhelper;
 
+import com.intellij.icons.AllIcons;
+import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.ComboBox;
 import com.intellij.openapi.ui.DialogWrapper;
 import com.intellij.ui.Gray;
 import com.intellij.ui.components.JBList;
 import com.intellij.ui.components.JBScrollPane;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;
-import org.random.libraryhelper.Dependency;
-import org.random.libraryhelper.DependencyLoader;
 
 import javax.annotation.Nullable;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.joining;
@@ -30,8 +32,12 @@ public class SampleDialogWrapper extends DialogWrapper {
   volatile String lastUpdatedCategory;
   DependencyLoader dependencyLoader;
 
-  public SampleDialogWrapper() {
+  Project project;
+
+  public SampleDialogWrapper(Project project) {
     super(true); // use current window as parent
+
+    this.project = project;
 
     dependencyLoader = new DependencyLoader();
     categories = dependencyLoader.readCategories();
@@ -42,12 +48,19 @@ public class SampleDialogWrapper extends DialogWrapper {
     updateArtifactListForCategoryComboBox();
   }
 
+  @Override
+  protected Action [] createActions() {
+    return new Action[] { new AddAction(), getOKAction() };
+  }
+
   @Nullable
   @Override
   protected JComponent createCenterPanel() {
 
     JPanel dialogPanel = new JPanel(new BorderLayout());
     dialogPanel.setPreferredSize(new Dimension(600, 300));
+
+    setOKButtonText("Close");
 
     categoriesComboBox = new ComboBox();
     for (String category: categories) {
@@ -138,4 +151,26 @@ public class SampleDialogWrapper extends DialogWrapper {
     }
   }
 
+  private class AddAction extends AbstractAction {
+    AddAction() {
+      super("Add");
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+      GradleDependencyWriter gradleDependencyWriter = new GradleDependencyWriter();
+      if (artefactsUIList.getSelectedIndex() != -1 && versionsComboBox.getSelectedIndex() != -1) {
+        Dependency dependency = (Dependency) artefactsUIList.getModel().getElementAt(artefactsUIList.getSelectedIndex());
+        String version = (String) versionsComboBox.getSelectedItem();
+        try {
+          for (Artefact artefact: dependency.getArtefacts()) {
+            gradleDependencyWriter.addToGradleProject(artefact, version, project.getBasePath() + "/build.gradle");
+          }
+        }
+        catch (Exception ex) {
+          JOptionPane.showMessageDialog(getContentPane(), ExceptionUtils.getStackTrace(ex));
+        }
+      }
+    }
+  }
 }

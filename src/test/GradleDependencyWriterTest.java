@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
-import org.random.libraryhelper.Artefact;
-import org.random.libraryhelper.GradleDependencyWriter;
+import com.random.libraryhelper.Artefact;
+import com.random.libraryhelper.GradleDependencyWriter;
 
 public class GradleDependencyWriterTest {
 
@@ -34,4 +34,24 @@ public class GradleDependencyWriterTest {
             "  compile group: \'com.google.guava\', name: \'guava\', version:\'10.0\'\n" +
             "}", newContents);
   }
+
+  @Test
+  public void testAddDependencyToCorrectDependenciesBlock() {
+    String newContents = gradleDependencyWriter.addDependencyToContents(artefact, artefactVersion,
+            "buildscript {\n" +
+                    "   dependencies {\n" +
+                    "   }\n" +
+                    "}\n" +
+                    "dependencies {\n" +
+                    "}\n");
+    Assert.assertEquals(
+            "buildscript {\n" +
+                    "   dependencies {\n" +
+                    "   }\n" +
+                    "}\n" +
+                    "dependencies {\n" +
+                    "  compile group: \'com.google.guava\', name: \'guava\', version:\'10.0\'\n" +
+                    "}\n", newContents);
+  }
+
 }

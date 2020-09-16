@@ -9,11 +9,7 @@ public class FileUtil {
     return new String(Files.readAllBytes(Paths.get(fileName)));
   }
 
-  public static void writeStringToFile(String s, String fileName) {
-    try {
-      Files.write(Paths.get(fileName), s.getBytes());
-    } catch (IOException e) {
-      // ignore
-    }
+  public static void writeStringToFile(String s, String fileName) throws IOException {
+    Files.write(Paths.get(fileName), s.getBytes());
   }
 }
