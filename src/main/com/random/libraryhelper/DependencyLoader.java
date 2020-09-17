@@ -85,6 +85,7 @@ public class DependencyLoader {
       dependencies.add(new Dependency(artefacts, lineParts[0], lineParts[1]));
     }
     scanner.close();
+    dependencies.sort((d1, d2) -> d1.getName().compareToIgnoreCase(d2.getName()));
     return dependencies;
 
   }
@@ -98,6 +99,7 @@ public class DependencyLoader {
       categories.add(scanner.nextLine());
     }
     scanner.close();
+    categories.sort(String::compareToIgnoreCase);
     return categories;
   }
 

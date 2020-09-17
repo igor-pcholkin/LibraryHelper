@@ -1,0 +1,4 @@
+RabbitMQ Java Client|The RabbitMQ Java client library allows Java applications to interface with RabbitMQ|com.rabbitmq:amqp-client
+Kafka|Apache Kafka client|org.apache.kafka:kafka-clients
+ActiveMQ client|This open source message broker is written in Java and Java Message Service (JMS) client|org.apache.activemq:activemq-client
+Kestrel|The Kestrel message broker is written in scala and speaks the memcached protocolorg|hogel:simple-kestrel-client

@@ -40,7 +40,6 @@ Compilers
 YAML Parsers
 Cache Implementations
 Compression Libraries
-Message Queue Clients
 JPA Implementations
 Mail Clients
 Defect Detection Metadata

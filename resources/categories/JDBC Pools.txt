@@ -1,1 +1,7 @@
 Apache Commons DBCP|Database connection pooling services|org.apache.commons:commons-dbcp2
+C3P0|C3P0 is an easy-to-use library for augmenting traditional (DriverManager based) JDBC drivers with JNDI-bindable DataSources, including DataSources that implement Connection and Statement Pooling, as described by the jdbc3 spec and jdbc2 standard extension|c3p0:c3p0
+Proxool|Java connection pool.It transparently adds connection pooling to your existing JDBC driver.|com.cloudhopper.proxool:proxool
+DBPool|A Java-based database connection pooling utility, which supports time-based expiry and statement caching, connection validation, and easy configuration using a pool manager|net.snaq:dbpool
+Primrose|Primrose is a database connection pool, written in Java|primrose:primrose
+XAPool|XAPool is an XA database connection pool|com.experlog:xapool
+BoneCP|BoneCP is a fast, free, open-source, Java database connection pool (JDBC Pool) library.|com.jolbox:bonecp

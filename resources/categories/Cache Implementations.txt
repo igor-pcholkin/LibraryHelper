@@ -1,1 +1,8 @@
 Apache Commons JCS|Java Caching System|org.apache.commons:commons-jcs
+Guava cache|Google Guava Cache|com.google.guava:guava
+Caffeine|A high-performance caching library for Java|com.github.ben-manes.caffeine:caffeine
+cache2k|High Performance Java Caching|org.cache2k:cache2k-all
+Ehcache|Open source, standards-based cache that boosts performance, offloads your database, and simplifies scalability|net.sf.ehcache:ehcache
+Apache Ignite|horizontally scalable, fault-tolerant distributed in-memory computing platform for building real-time applications that can process terabytes of data with in-memory speed|org.apache.ignite:ignite-core
+Hazelcast|Hazelcast IMDG is an open source in-memory data grid based on Java|com.hazelcast:hazelcast
+Infinispan|distributed in-memory key/value data store with optional schema, available under the Apache License 2.0|org.infinispan:infinispan-core
