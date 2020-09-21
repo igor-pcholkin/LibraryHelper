@@ -1,2 +1,3 @@
 Apache Commons Text|Apache Commons Text is a library focused on algorithms working on strings|org.apache.commons:commons-text
 Guava|Google core libraries for Java|com.google.guava:guava
+LingPipe|LingPipe is tool kit for processing text using computational linguistics|de.julielab:aliasi-lingpipe

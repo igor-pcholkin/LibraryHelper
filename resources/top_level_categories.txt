@@ -103,6 +103,6 @@ IDE tools
 Graphics And UI
 Machine Learning
 Jenkins plugins
-Google Services
+Web Services
 Data Formats
 Java tools

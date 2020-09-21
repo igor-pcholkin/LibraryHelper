@@ -1,0 +1,2 @@
+ANTLR|ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files|org.antlr:antlr4
+JavaCC|JavaCC (Java Compiler Compiler) is an open-source parser generator and lexical analyzer generator|javacc:javacc

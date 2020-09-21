@@ -1,1 +1,2 @@
 Google Analytics API Client|Google Analytics API Client Library for Java|com.google.apis:google-api-services-analytics
+Hosebird Client (hbc)|A Java HTTP client for consuming Twitter's standard Streaming API|com.twitter:hbc-core

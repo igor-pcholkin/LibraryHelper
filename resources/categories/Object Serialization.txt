@@ -1,1 +1,5 @@
 Protobuf|Protocol buffers are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data|com.google.protobuf:protobuf-java
+Kryo|fast and efficient binary object graph serialization framework for Java|com.esotericsoftware:kryo
+Apache Thrift|Cross-language serialization|org.apache.thrift:libthrift
+Protostuff|A java serialization library with built-in support for forward-backward compatibility (schema evolution) and validation|io.protostuff:protostuff-core,io.protostuff:protostuff-runtime
+capnproto-java|Cap'n Proto is an extremely efficient protocol for sharing data and capabilities|org.capnproto:runtime

@@ -9,3 +9,4 @@ Neo4j|Neo4j|org.neo4j:neo4j
 Redis|Redis|redis.clients:jedis
 Xodus|JetBrains Xodus is a transactional schema-less embedded database that is written in Java and Kotlin|org.jetbrains.xodus:xodus-openAPI
 Eclipse JNoSQL|Java framework that streamlines the integration of Java applications with NoSQL databases|org.jnosql.diana:diana-document,org.jnosql.diana:diana-key-value,org.jnosql.diana:diana-column
+RocksDB|A RocksDB is a persistent ordered map from keys to values|org.rocksdb:rocksdbjni
