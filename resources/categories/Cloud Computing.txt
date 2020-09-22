@@ -1,0 +1,7 @@
+AWS SDK For Java|The Amazon Web Services SDK for Java provides Java APIs for building software on AWS' cost-effective, scalable, and reliable infrastructure products|com.amazonaws:aws-java-sdk
+AWS Java SDK For Amazon S3|The AWS Java SDK for Amazon S3 module holds the client classes that are used for communicating with Amazon Simple Storage Service|com.amazonaws:aws-java-sdk-s3
+AWS SDK For Java Core|The AWS SDK for Java - Core module holds the classes that are used by the individual service clients to interact with Amazon Web Services|com.amazonaws:aws-java-sdk-core
+AWS Java SDK For Amazon DynamoDB|The AWS Java SDK for Amazon DynamoDB module holds the client classes that are used for communicating with Amazon DynamoDB Service|com.amazonaws:aws-java-sdk-dynamodb
+AWS Lambda Java Core Library|Minimal set of interface definitions for Java support in AWS Lambda|com.amazonaws:aws-lambda-java-core
+AWS Java SDK For Amazon EC2|The AWS Java SDK for Amazon EC2 module holds the client classes that are used for communicating with Amazon EC2 Service|com.amazonaws:aws-java-sdk-ec2
+AWS Java SDK For AWS Lambda|The AWS Java SDK for AWS Lambda module holds the client classes that are used for communicating with AWS Lambda Service|com.amazonaws:aws-java-sdk-lambda

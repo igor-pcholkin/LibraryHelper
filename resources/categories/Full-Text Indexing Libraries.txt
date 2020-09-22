@@ -1,0 +1,3 @@
+Apache Lucene|Lucene Core is a Java library providing powerful indexing and search features, as well as spellchecking|org.apache.lucene:lucene-core
+Apache Solr|Solr (pronounced "solar") is an open-source enterprise-search platform, written in Java, from the Apache Lucene project|org.apache.solr:solr-core
+Elasticsearch Client|Elasticsearch REST Client|org.elasticsearch.client:elasticsearch-rest-client

@@ -1,4 +1,4 @@
-MSSql|MSSql JDBC driver|com.microsoft.sqlserver:mssql-jdbc
+SQL Server|MSSql JDBC driver|com.microsoft.sqlserver:mssql-jdbc,net.sourceforge.jtds:jtds
 Oracle|Oracle JDBC driver|com.oracle:ojdbc14
 PostgreSQL|PostgreSQL JDBC driver|org.postgresql:postgresql
 MySQL|MySQL JDBC driver|mysql:mysql-connector-java
@@ -9,3 +9,6 @@ Cubrid|Cubrid JDBC driver|cubrid:cubrid-jdbc
 Firebird|Firebird JDBC driver|org.firebirdsql.jdbc:jaybird
 IBM DB2|IBM DB2 JDBC driver|com.ibm.db2:jcc,com.ibm.db2.jcc:db2jcc4
 Informix|Informix JDBC driver|com.ibm.informix:jdbc
+Apache Derby|is a relational database management system (RDBMS) developed by the Apache Software Foundation that can be embedded in Java programs|org.apache.derby:derbyclient
+HSQLDB|(Hyper SQL Database) is a relational database management system written in Java|org.hsqldb:hsqldb
+Sybase|Sybase Jconn3|com.esen.jdbc:sybase-jconn3

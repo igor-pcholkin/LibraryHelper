@@ -1,0 +1,1 @@
+CAS|CAS is an enterprise multilingual single sign-on solution for the web and attempts to be a comprehensive platform for your authentication and authorization needs|org.apereo.cas:cas-server-core-util-api

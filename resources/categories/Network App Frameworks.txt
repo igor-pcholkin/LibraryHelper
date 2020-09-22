@@ -3,3 +3,4 @@ Apache Commons Net|Collection of network utilities and protocol implementations|
 Apache Mina|Apache Mina is a network application framework with which developers can easily create highly scalable and performant network applications|org.apache.mina:mina-core
 Jsse|Java Secure Socket Extension|org.openjsse:openjsse
 Proxy Vole|Java library to auto detect the platform network proxy settings|com.github.markusbernhardt:proxy-vole
+Apache MINA|Apache MINA is a network application framework which helps users develop high performance and high scalability network applications easily|org.apache.mina:mina-core

@@ -1,1 +1,2 @@
 Apache Commons DbUtils|JDBC helper library|commons-dbutils:commons-dbutils
+P6spy|library that enables database data to be seamlessly intercepted and logged with no code changes to the application|p6spy:p6spy

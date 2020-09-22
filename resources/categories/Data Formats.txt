@@ -1,3 +1,6 @@
 [ini4j]| - Java API for handling Windows ini file format|org.ini4j:ini4j
 HttpMime|HttpClient - MIME coded entities|org.apache.httpcomponents:httpmime
 Snakeyaml|Yaml parser|org.yaml:snakeyaml
+Apache POI|the Java API for Microsoft Documents|org.apache.poi:poi
+Apache POF|Formatting Objects Processor (FOP, also known as Apache FOP) is a Java application that converts XSL Formatting Objects (XSL-FO) files to PDF or other printable formats.|org.apache.xmlgraphics:fop
+iText|iText is a library for creating and manipulating PDF files in Java and .NET|com.itextpdf:itextpdf

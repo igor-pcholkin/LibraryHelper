@@ -1,0 +1,5 @@
+Client Aggregator|Apache Hadoop Client Aggregator|org.apache.hadoop:hadoop-client
+Hadoop Core|Hadoop Core|org.apache.hadoop:hadoop-core
+Hadoop Common|Hadoop Common|org.apache.hadoop:hadoop-common
+HDFS|Apache Hadoop HDFS|org.apache.hadoop:hadoop-hdfs
+MapReduce|Apache Hadoop MapReduce Core|org.apache.hadoop:hadoop-mapreduce-client-core

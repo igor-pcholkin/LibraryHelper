@@ -76,7 +76,6 @@ JSP Tag Libraries
 Functional Programming
 Excel Libraries
 Markdown Processors
-Hadoop Query Engines
 Android Platform
 Job Scheduling
 SSH Libraries
@@ -85,7 +84,7 @@ Native Access Tools
 FTP Clients and Servers
 Annotation libraries
 Git Tools
-OAuth Libraries
+Authentication Libraries
 JWT Libraries
 Microbenchmarks
 Full-Text Indexing Libraries
@@ -106,3 +105,4 @@ Jenkins plugins
 Web Services
 Data Formats
 Java tools
+Hadoop

@@ -1,2 +1,4 @@
 Apache Commons Collections|Extends or augments the Java Collections Framework|org.apache.commons:commons-collections4
 Guava|Google core libraries for Java|com.google.guava:guava
+Trove|The Trove library provides high speed Object and primitive collections for Java|trove:trove
+fastutil|extends the Java™ Collections Framework by providing type-specific maps, sets, lists and queues with a small memory footprint and fast access and insertion|it.unimi.dsi:fastutil
